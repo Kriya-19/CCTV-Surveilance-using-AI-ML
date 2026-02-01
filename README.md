@@ -1,45 +1,106 @@
 # CCTV-Surveilance-using-AI-ML
 
-AI-powered hostel surveillance system using OpenCV and Roboflow. Detects fights, unauthorized access, anomalies, and guard inactivity. Sends real-time alerts with dashboards, ensuring smarter, privacy-aware monitoring on existing CCTV setups. :contentReference[oaicite:0]{index=0}
+AI-powered CCTV surveillance system using Machine Learning and Computer Vision to monitor hostels and secured premises. The system detects fights, unauthorized access, anomalies, and guard inactivity, providing real-time alerts and a visual dashboard to enhance safety and situational awareness.
 
 ---
 
 ## 🧠 Project Overview
 
-This project provides an intelligent CCTV surveillance framework designed for **hostel/security monitoring** by leveraging **Computer Vision (OpenCV)** and **Machine Learning (Roboflow models)**. It detects and reports on:
+This project implements an intelligent surveillance system built on top of existing CCTV infrastructure. Using OpenCV and Roboflow-trained models, the system analyzes live or recorded video feeds to identify suspicious or unsafe activities automatically.
 
-- 🚨 **Fight detection**
-- 🔓 **Unauthorized access & anomalies**
-- 🛡️ **Guard inactivity monitoring**
-- 📊 **Real-time alerts & dashboard visualization**
-
-The system is built to integrate with existing cameras and enhance situational awareness in real time. :contentReference[oaicite:1]{index=1}
+The solution reduces manual monitoring effort while improving response time to critical incidents such as violence, intrusion, or lack of security presence.
 
 ---
 
 ## 🚀 Features
 
-✔️ Detects violent behavior in video feeds  
-✔️ Recognizes unauthorized presence  
-✔️ Monitors inactivity (e.g., guard not present)  
-✔️ Sends alerts via real-time dashboard  
-✔️ Modular and extensible architecture  
-✔️ Uses lightweight, efficient CV models  
-✔️ Easy setup with Python
+- Fight detection  
+- Unauthorized access detection  
+- Guard inactivity monitoring  
+- Real-time alerts  
+- Live surveillance dashboard  
+- Works with CCTV / webcam feeds  
+- Modular and extensible design  
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Component | Technology |
-|-----------|------------|
-| Computer Vision | OpenCV |
-| Detection Models | Roboflow (YOLO / custom models) |
-| UI / Dashboard | Streamlit / Python UI |
-| Language | Python |
-| Others | Numpy, Threading |
+- **Programming Language:** Python  
+- **Computer Vision:** OpenCV  
+- **Machine Learning Models:** Roboflow (YOLO-based)  
+- **Dashboard:** Streamlit  
+- **Libraries:** NumPy, Threading  
 
 ---
 
-## 📁 Repository Structure
+## 📁 Project Structure
+
+CCTV-Surveilance-using-AI-ML/  
+├── models/                       # Trained ML models  
+├── Gender-and-Age-Detection/     # Optional demographic detection module  
+├── streamlit1.py                 # Main dashboard application  
+├── .gitattributes  
+└── README.md  
+
+---
+
+## ⚙️ Installation
+
+Clone the repository:
+
+git clone https://github.com/Kriya-19/CCTV-Surveilance-using-AI-ML.git  
+cd CCTV-Surveilance-using-AI-ML  
+
+(Optional) Create a virtual environment:
+
+python -m venv venv  
+
+Activate the environment:
+
+Windows:  
+venv\Scripts\activate  
+
+Linux / macOS:  
+source venv/bin/activate  
+
+Install dependencies:
+
+pip install opencv-python roboflow streamlit numpy  
+
+---
+
+## ▶️ Running the Project
+
+Start the surveillance dashboard:
+
+streamlit run streamlit1.py  
+
+The dashboard will open in your browser at:
+
+http://localhost:8501  
+
+---
+
+## 📌 How It Works
+
+1. Connect a CCTV camera or webcam feed  
+2. Video frames are captured and processed  
+3. Machine learning models analyze human activity  
+4. Suspicious or abnormal behavior triggers alerts  
+5. Dashboard displays live feed, detections, and logs  
+
+---
+
+## 🧪 Model Training & Customization
+
+To use custom models:
+
+1. Train a dataset using Roboflow  
+2. Export the model in YOLO format  
+3. Place the model files in the models/ directory  
+4. Update the model path in the detection script  
+
+---
+
 
